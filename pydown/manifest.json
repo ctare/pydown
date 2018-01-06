@@ -1,0 +1,13 @@
+{
+  "name": "pydown",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "soundcloud youtube downloader",
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*", "https://soundcloud.com/*"],
+      "js": ["jquery-2.1.4.min.js", "pydown.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

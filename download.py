@@ -19,4 +19,3 @@ def download(url, category, title):
     except:
         with open("log", "a") as f:
             f.write(url + "\n")
-
